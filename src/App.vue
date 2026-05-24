@@ -100,7 +100,15 @@ onMounted(apiData)
   </div>
 </template>
 
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+</style>
+
 <style scoped>
+
 .allPages {
   display: flex;
   justify-content: center;
