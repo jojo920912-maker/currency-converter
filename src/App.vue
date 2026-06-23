@@ -116,6 +116,8 @@ onMounted(apiData)
   flex-direction: column;
   min-height: 100vh;
   background-color: #2b2b2b;
+  padding: 16px;
+  box-sizing: border-box;
 }
 
 .card {
@@ -123,7 +125,9 @@ onMounted(apiData)
   border-radius: 12px;
   border: 1px solid #4a4a4a;
   padding: 2rem;
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
 }
 
 .card-title {

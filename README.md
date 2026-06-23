@@ -1,38 +1,40 @@
-# exchange rate
+# 匯率換算器 Currency Converter
 
-This template should help get you started developing with Vue 3 in Vite.
+一個即時匯率換算的網頁應用，串接 ExchangeRate API 取得每日更新的匯率，支援多國幣別互相換算。
 
-## Recommended IDE Setup
+🔗 **線上 Demo**：https://jojo920912-maker.github.io/currency-converter/
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## 功能特色
 
-## Recommended Browser Setup
+- 💱 **即時匯率換算**：串接 ExchangeRate API，取得最新匯率資料
+- 🌍 **多幣別支援**：支援世界各國貨幣互相換算
+- 🕐 **每日更新**：顯示匯率最後更新時間
+- 📱 **響應式設計（RWD）**：支援桌機、平板、手機各種螢幕尺寸
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+## 使用技術
 
-## Customize configuration
+- **Vue 3**（Composition API）
+- **Vite**
+- **Axios** — 串接外部 API
+- **ExchangeRate API** — 即時匯率資料來源
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## 本機執行
 
-## Project Setup
+### 1. 下載專案
+
+```sh
+git clone https://github.com/jojo920912-maker/currency-converter.git
+cd currency-converter
+```
+
+### 2. 安裝套件
 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### 3. 設定環境變數
 
-```sh
-npm run dev
-```
+本專案使用 ExchangeRate API，需要自行申請 API Key。
 
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+請至 [ExchangeRate-API](https://www.exchangerate-api.com/) 申請免費 API Key，並在專案根目錄建立 `.env` 檔案，填入：
